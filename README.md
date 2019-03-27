@@ -24,7 +24,7 @@ Assignments
 
 Alex - Write up, list of items (with pseudo code), list of operations (with pseudo code)
 
-David - Readme, coversheet
+David - Readme, coversheet, description of example
 
 Coghan - Encoding
 
