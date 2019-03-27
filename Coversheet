@@ -1,6 +1,8 @@
 ADT name: Steg
 
-Steg is a steganography encoder and decoder.  It handles two files for input, an image and a message to be encoded.  The decoder portion will read an encoded image and extract the message from the image in a human-readable format.  The idea is to provide a way to pass encoded messages from one party to another.
+Steg is a steganography encoder and decoder.  It handles two files for input, an image and a message to be encoded.
+The decoder portion will read an encoded image and extract the message from the image in a human-readable format.
+The idea is to provide a way to pass encoded messages from one party to another.
 
 Team Name: Abstract Data Typers
 
