@@ -1,0 +1,24 @@
+How to use Steg with description of example
+
+
+As you know by now Steg has two parts, an input (the encoder) and an output (the decoder).  The encoder requires an image and a message, the decoder only needs an image which it will extract a message from.
+
+ENCODER
+Provide an image file (converted to a .txt file) with ARGB values in a newline separated list.  Then provide the message as a string that ends in a '#'.  The # denotes the end of the message.
+
+For example the file could be called "image.txt" and should contain something like: 
+
+fafcf9
+fafcfb
+f8fcfd
+f8fdff
+...
+
+And the message could be as simple as "hey#"
+
+The encoder will provide a new image/text file that can then be passed securely to the receiving party.
+
+DECODER
+You should now have an image/text file to use as input to the decoder portion of the program.  Send this to the decoder and it will create a new file with the hidden message inside.
+
+
