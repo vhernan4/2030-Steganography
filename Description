@@ -1,10 +1,12 @@
 How to use Steg with description of example
 
+As you know by now Steg has two parts, an input (the encoder) and an output (the decoder).
+The encoder requires an image and a message, the decoder only needs an image which it will extract a message from.
 
-As you know by now Steg has two parts, an input (the encoder) and an output (the decoder).  The encoder requires an image and a message, the decoder only needs an image which it will extract a message from.
 
 ENCODER
-Provide an image file (converted to a .txt file) with ARGB values in a newline separated list.  Then provide the message as a string that ends in a '#'.  The # denotes the end of the message.
+Provide an image file (converted to a .txt file) with ARGB values in a newline separated list.
+Then provide the message as a string that ends in a '#'.  The # denotes the end of the message.
 
 For example the file could be called "image.txt" and should contain something like: 
 
@@ -18,7 +20,28 @@ And the message could be as simple as "hey#"
 
 The encoder will provide a new image/text file that can then be passed securely to the receiving party.
 
+It is important to note here that the new image will look identical to the original.  This is because the only the least 
+significant bit in each pixel is being changed by 1, if it is changed at all.
+
+So the above list of pixels might look something like this after the encoding process:
+
+fbfcf9
+fafdfb
+f8fcfd
+f9fdff
+...
+
+You can probably easily notice the changes, but this is only because you have both the original and final image files.
+When passing a secret message only the encoded image should be sent.  All that can be seen in the file is the list
+of pixels and without the original to compare it against it seems like any regular image.
+
+So while this does not alter the look of the image in any noticeable way it still embeds the message.
+
+
 DECODER
-You should now have an image/text file to use as input to the decoder portion of the program.  Send this to the decoder and it will create a new file with the hidden message inside.
+You should now have an image/text file to use as input to the decoder portion of the program.
+Send this to the decoder and it will create a new file with the hidden message inside!
+This message will self-destruct in 10 seconds.
+
 
 
