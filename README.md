@@ -19,6 +19,7 @@ Week of March 25th
   - Final touches on project
 
 
+
 Assignments
 
 Alex - Write up, list of items (with pseudo code), list of operations (with pseudo code)
