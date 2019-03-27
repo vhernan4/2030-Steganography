@@ -22,14 +22,17 @@ Week of March 25th
 Assignments
 
 Alex - Write up, list of items (with pseudo code), list of operations (with pseudo code)
+
 David - Readme, coversheet
+
 Coghan - Encoding
+
 Victor - Decoding
+
 Hunter - ?
 
 
-Language
-C++
+Language is C++
 
 
 
